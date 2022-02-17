@@ -1,0 +1,39 @@
+.menuPoint {
+    cursor: pointer;
+    transition-duration: .2s;
+
+}
+.menuPoint:hover {
+    color: #edbe44 !important;
+}
+.addressBox {
+    border-radius: 5px;
+    border: 1px solid #bbf8f1;
+    color: #edbe44;
+}
+.borderAccent {
+    border: 1px solid #bbf8f1;
+}
+
+.accentText {
+    color: #bbf8f1;
+}
+.cardsHover {
+    transform: rotate3d(6, 6, 0, 40deg);
+    filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.7));
+    transition-duration: .25s;
+
+}
+.cardsHover:hover {
+    filter: drop-shadow(3px 3px 12px rgba(237, 190, 68, 0.7));
+    border: 1px solid #edbe44;
+    transform: scale(1.2);
+    z-index: 100;
+}
+.socialLink {
+    transition-duration: .35s;
+}
+.socialLink:hover {
+    transform: scale(1.2) rotate3d(6, 6, 0, 40deg);
+    filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.7));
+}

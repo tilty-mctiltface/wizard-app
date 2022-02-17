@@ -1,0 +1,41 @@
+.completed-info {
+    padding: 10px;
+    width: 170px;
+    text-align: center;
+}
+.started-at {
+    padding: 10px;
+    background-color: rgba(69, 69, 69, 0.5);
+    width: 220px;
+    text-align: center;
+}
+.roadmap-box {
+    background-color: rgba(38, 38, 38, 0.4);
+    border-radius: 4px;
+    transition-duration: .25s;
+    border: 1px solid #262626;
+    margin: auto;
+    width: 1200px;
+}
+.roadmap-box:hover {
+    background-color: rgba(22, 22, 22, 0.9);
+    /*background-color: rgba(94, 246, 228, 0.91);*/
+    border: 1px solid #5EF6E4;
+    /*color: #262626;*/
+}
+
+.done {
+        background-color: rgba(117, 246, 94, 0.9);
+}
+.almost-done {
+    background-color: rgba(246, 203, 94, 0.9);
+}
+.halfway {
+    background-color: rgba(246, 155, 94, 0.9);
+}
+.barely-started {
+    background-color: rgba(246, 124, 94, 0.9);
+}
+.fresh {
+    background-color: rgba(246, 94, 94, 0.9);
+}
