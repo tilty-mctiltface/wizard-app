@@ -9,7 +9,7 @@
     transform: rotate3d(6, 6, 0, 40deg);
     filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.7));
     transition-duration: .25s;
-
+    animation: glow 2.75s infinite;
 }
 .cardsHover:hover {
     filter: drop-shadow(3px 3px 12px rgba(237, 190, 68, 0.7));
@@ -23,4 +23,16 @@
 .socialLink:hover {
     transform: scale(1.2) rotate3d(6, 6, 0, 40deg);
     filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.7));
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.3));
+    }
+    50% {
+        filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.7));
+    }
+    100% {
+        filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.3));
+    }
 }
