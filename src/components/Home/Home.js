@@ -59,7 +59,7 @@ function Description(props) {
 
 function Images(props) {
   return (
-      <div className="grid tablet:grid-cols-2 tablet:grid-rows-4 xl:grid-cols-5 xl:grid-rows-2 gap-10 place-items-center mt-16 mr-12 ml-12">
+      <div className="grid tablet:grid-cols-2 tablet:grid-rows-4 laptop:grid-cols-5 laptop:grid-rows-2 gap-10 place-items-center mt-16 mr-12 ml-12">
         <img alt="Wizard" src={Wizard9} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover ${Styles.borderAccent} ${Styles.cardsHover}`}/>
         <img alt="Wizard" src={Wizard2} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover ${Styles.borderAccent} ${Styles.cardsHover}`}/>
         <img alt="Wizard" src={Wizard3} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
