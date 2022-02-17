@@ -1,4 +1,4 @@
-import Header from "../shared/Header/Header";
+import Header from "../shared/DEPRECATEDHeader/Header";
 import Information from "./Information/Information";
 import MintArea from "../shared/MintArea/MintArea";
 import Roadmap from "./Roadmap/Roadmap"

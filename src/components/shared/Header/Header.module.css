@@ -1,0 +1,13 @@
+.menuPoint {
+    cursor: pointer;
+    transition-duration: .2s;
+
+}
+.menuPoint:hover {
+    color: #edbe44 !important;
+}
+.addressBox {
+    border-radius: 5px;
+    border: 1px solid #bbf8f1;
+    color: #edbe44;
+}
