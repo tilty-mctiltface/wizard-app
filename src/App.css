@@ -30,6 +30,7 @@
     background-image: url("/src/assets/forest_bg.png");
     z-index: -1;
 }
+
 .dark-bg {
     background-color: #0e1b23;
 }

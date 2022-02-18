@@ -1,0 +1,105 @@
+.menu {
+    position: relative;
+    display:  inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+    pointer-events: auto;
+}
+.menu span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+}
+.menu span:before, .menu span:after {
+    position: absolute;
+    content: '';
+}
+.menu span, .menu span:before, .menu span:after {
+    width: 30px;
+    height: 6px;
+    background-color: #5ef6e4;
+    display: block;
+}
+.menu span:before {
+    margin-top: -12px;
+}
+.menu span:after {
+    margin-top: 12px;
+}
+
+/* example 6 */
+.burger span {
+    -webkit-transition-duration: 0s; transition-duration: 0s;
+    -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.burger:hover span {
+    background-color: rgba(0,0,0,0.0);
+    -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.burger span:before {
+    -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+    -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%;
+}
+.burger:hover span:before {
+    margin-top: 0;
+    -webkit-transform: rotate(22.5deg) skewX(22.5deg); transform: rotate(22.5deg) skewX(22.5deg);
+    -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.burger span:after {
+    -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+    -webkit-transform-origin: 100% 0%; transform-origin: 100% 0%;
+}
+.burger:hover span:after {
+    margin-top: 0;
+    -webkit-transform: rotate(-22.5deg) skewX(-22.5deg); transform: rotate(-22.5deg) skewX(-22.5deg);
+    -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+/*MENU STUFFS*/
+.container {
+    z-index: 2;
+    height: 0vh;
+    background-color: rgba(33, 33, 33, 0.3);
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+}
+.container:hover {
+    height: 100vh;
+}
+.menuPoint {
+    background-color: #1f1f1f;
+    color: #5EF6E4;
+    border-right: 5px solid #5EF6E4;
+    margin-left: -290px;
+}
+.menuPoint:hover {
+    margin-left: 0px !important;
+}
+.container:hover .menuPoint:nth-child(2) {
+    animation: slide 0.25s linear 0s forwards;
+}
+.container:hover .menuPoint:nth-child(3) {
+    animation: slide 0.25s linear 0.1s forwards;
+}
+.container:hover .menuPoint:nth-child(4) {
+    animation: slide 0.25s linear 0.2s forwards;
+}
+.container:hover .menuPoint:nth-child(5) {
+    animation: slide 0.25s linear 0.3s forwards;
+}
+.container:hover .menuPoint:nth-child(6) {
+    animation: slide 0.25s linear 0.4s forwards;
+}
+@keyframes slide {
+    0% {
+        margin-left: -290px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}

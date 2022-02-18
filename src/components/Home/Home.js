@@ -3,7 +3,6 @@ import MintArea from "../shared/MintArea/MintArea";
 import Footer from "../shared/Footer/Footer";
 import Header from "../shared/Header/Header";
 
-// import VelasLogo from '../../assets/velas-logo.svg'
 import Wizard1 from "../../assets/1.png"
 import Wizard2 from "../../assets/2.png"
 import Wizard3 from "../../assets/3.png"
@@ -18,12 +17,14 @@ import Twitter from "../../assets/socials/twitter.svg";
 import Telegram from "../../assets/socials/telegram.svg";
 import Medium from "../../assets/socials/medium.svg";
 import Github from "../../assets/socials/github.svg";
+import MobileHeader from "../shared/MobileHeader/MobileHeader";
 
 function Home(props) {
   return (
       <div>
+        <MobileHeader/>
         <div className="h-full dark-bg pr-8 pl-8">
-          <Header/>
+          {/*<Header/>*/}
           <Images/>
           <Description/>
           <StickySocials/>
@@ -59,7 +60,7 @@ function Description(props) {
 
 function Images(props) {
   return (
-      <div className="grid tablet:grid-cols-2 tablet:grid-rows-4 laptop:grid-cols-5 laptop:grid-rows-2 gap-10 place-items-center mt-16 mr-12 ml-12">
+      <div className="grid tablet:grid-cols-2 tablet:grid-rows-4 laptop:grid-cols-5 laptop:grid-rows-2 gap-10 place-items-center pt-16 laptop:pt-16 mr-12 ml-12">
         <img alt="Wizard" src={Wizard9} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover ${Styles.borderAccent} ${Styles.cardsHover}`}/>
         <img alt="Wizard" src={Wizard2} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover ${Styles.borderAccent} ${Styles.cardsHover}`}/>
         <img alt="Wizard" src={Wizard3} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>

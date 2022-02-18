@@ -28,11 +28,14 @@
 @keyframes glow {
     0% {
         filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.3));
+        border: 1px solid rgba(94, 246, 228, 0.6);
     }
     50% {
         filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.7));
+        border: 1px solid #bbf8f1;
     }
     100% {
         filter: drop-shadow(3px 3px 10px rgba(94, 246, 228, 0.3));
+        border: 1px solid rgba(94, 246, 228, 0.6);
     }
 }
