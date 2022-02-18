@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import Styles from "./MobileHeader.module.css"
 
-import VelasLogo from '../../../assets/velas-logo.svg'
+// import VelasLogo from '../../../assets/velas-logo.svg'
 
 function MobileHeader(props) {
   return (

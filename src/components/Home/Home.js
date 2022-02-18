@@ -1,7 +1,7 @@
 import Styles from './Home.module.css'
 import MintArea from "../shared/MintArea/MintArea";
 import Footer from "../shared/Footer/Footer";
-import Header from "../shared/Header/Header";
+// import Header from "../shared/Header/Header";
 
 import Wizard1 from "../../assets/1.png"
 import Wizard2 from "../../assets/2.png"
