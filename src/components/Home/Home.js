@@ -18,6 +18,7 @@ import Telegram from "../../assets/socials/telegram.svg";
 import Medium from "../../assets/socials/medium.svg";
 import Github from "../../assets/socials/github.svg";
 import MobileHeader from "../shared/MobileHeader/MobileHeader";
+// eslint-disable-next-line
 import Header from "../shared/Header/Header";
 import { Parallax } from 'react-parallax';
 
