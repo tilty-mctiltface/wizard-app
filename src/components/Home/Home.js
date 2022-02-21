@@ -18,20 +18,27 @@ import Telegram from "../../assets/socials/telegram.svg";
 import Medium from "../../assets/socials/medium.svg";
 import Github from "../../assets/socials/github.svg";
 import MobileHeader from "../shared/MobileHeader/MobileHeader";
+import Header from "../shared/Header/Header";
+import { Parallax } from 'react-parallax';
+
+import background from '../../assets/image.png'
 
 function Home(props) {
   return (
-      <div>
-        <MobileHeader/>
-        <div className="h-full dark-bg pr-8 pl-8">
-          {/*<Header/>*/}
-          <Images/>
-          <Description/>
-          <StickySocials/>
-          <MintArea/>
-          <Footer/>
+      <Parallax bgImage={background} strength={500}>
+        <div className={`dark-bg`}>
+          <MobileHeader/>
+          <div className="h-full pr-8 pl-8">
+            {/*<Header/>*/}
+            <Images/>
+            <Description/>
+            <StickySocials/>
+            <MintArea/>
+            <Footer/>
+          </div>
         </div>
-      </div>
+      </Parallax>
+
   )
 }
 
