@@ -17,8 +17,8 @@ import Twitter from "../../assets/socials/twitter.svg";
 import Telegram from "../../assets/socials/telegram.svg";
 import Medium from "../../assets/socials/medium.svg";
 import Github from "../../assets/socials/github.svg";
-import MobileHeader from "../shared/MobileHeader/MobileHeader";
 // eslint-disable-next-line
+import MobileHeader from "../shared/MobileHeader/MobileHeader";
 import Header from "../shared/Header/Header";
 import { Parallax } from 'react-parallax';
 
@@ -27,10 +27,10 @@ import background from '../../assets/image.png'
 function Home(props) {
   return (
       <Parallax bgImage={background} strength={500}>
-        <div className={`dark-bg`}>
-          <MobileHeader/>
+        <div className={``}>
+          {/*<MobileHeader/>*/}
           <div className="h-full pr-8 pl-8">
-            {/*<Header/>*/}
+            <Header/>
             <Images/>
             <Description/>
             <StickySocials/>

@@ -67,8 +67,12 @@
     background-color: rgba(33, 33, 33, 0.3);
     backdrop-filter: blur(2px);
     pointer-events: none;
+    transition-duration: 0.15s;
 }
 .container:hover {
+    height: 100vh;
+}
+.container:focus-within {
     height: 100vh;
 }
 .menuPoint {
@@ -78,7 +82,7 @@
     margin-left: -290px;
 }
 .menuPoint:hover {
-    margin-left: 0px !important;
+    /*margin-left: 0px !important;*/
 }
 .container:hover .menuPoint:nth-child(2) {
     animation: slide 0.25s linear 0s forwards;

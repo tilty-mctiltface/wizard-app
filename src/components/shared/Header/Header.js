@@ -12,9 +12,12 @@ function Header(props) {
         <nav className="flex flex-row flex-wrap font-face-dalek light-text">
           <Link to="/" className={'pl-5 pr-5 ' + Styles.menuPoint}>Enchanted Forest</Link>
           <Link to="/home" className={'pl-5 pr-5 ' + Styles.menuPoint}>Home</Link>
-          <Link to="/proposals" className={'pl-5 pr-5 ' + Styles.menuPoint}>Proposals</Link>
-          <Link to="/all-wizards" className={'pl-5 pr-5 ' + Styles.menuPoint}>All Wizards</Link>
-          <Link to="/dao-info" className={'pl-5 pr-5 ' + Styles.menuPoint}>DAO Information</Link>
+          <p className={'cursor-not-allowed pl-5 pr-5 ' + Styles.menuPoint}>Proposals</p>
+          <p className={'cursor-not-allowed pl-5 pr-5 ' + Styles.menuPoint}>All Wizards</p>
+          <p className={'cursor-not-allowed pl-5 pr-5 ' + Styles.menuPoint}>DAO Information</p>
+          {/*<Link to="/proposals" className={'cursor-not-allowed pl-5 pr-5 ' + Styles.menuPoint}>Proposals</Link>*/}
+          {/*<Link to="/all-wizards" className={'cursor-not-allowed pl-5 pr-5 ' + Styles.menuPoint}>All Wizards</Link>*/}
+          {/*<Link to="/dao-info" className={'cursor-not-allowed pl-5 pr-5 ' + Styles.menuPoint}>DAO Information</Link>*/}
         </nav>
         <div className={"flex flex-row justify-between items-center p-2 no-click " + Styles.addressBox}>
           {/*<img src={VelasLogo} alt="Velas" className="h-6 w-6 mr-5"/>*/}
