@@ -1,6 +1,5 @@
 import Styles from './Home.module.css'
 import MintArea from "../shared/MintArea/MintArea";
-import Footer from "../shared/Footer/Footer";
 // import Header from "../shared/Header/Header";
 
 import Wizard1 from "../../assets/1.png"
@@ -19,23 +18,23 @@ import Medium from "../../assets/socials/medium.svg";
 import Github from "../../assets/socials/github.svg";
 // eslint-disable-next-line
 import MobileHeader from "../shared/MobileHeader/MobileHeader";
-import Header from "../shared/Header/Header";
 import { Parallax } from 'react-parallax';
 
-import background from '../../assets/image.png'
+// TODO back to gradient bg
+import background from '../../assets/forest_bg.png'
+import AboutProject from "./AboutProject/AboutProject";
 
 function Home(props) {
   return (
-      <Parallax bgImage={background} strength={500}>
-        <div className={``}>
+      <Parallax bgImage={background} strength={800}>
+        <div className={`pl-8 pr-8`}>
           {/*<MobileHeader/>*/}
-          <div className="h-full pr-8 pl-8">
-            <Header/>
-            <Images/>
+          <div>
             <Description/>
-            <StickySocials/>
             <MintArea/>
-            <Footer/>
+            <StickySocials/>
+            <Images/>
+            <AboutProject/>
           </div>
         </div>
       </Parallax>
@@ -46,13 +45,13 @@ function Home(props) {
 function Description(props) {
   return (
       <div className="flex flex-col tablet:flex-row justify-center align-center items-center pt-20 pb-16">
-        <div className={"rounded-xl relative rounded-xl overflow-hidden tablet:mr-8 mr-0 mb-4 " + Styles.borderAccent}>
+        <div className={"rounded-xl relative rounded-xl overflow-hidden tablet:mr-8 mr-0 border-accent"}>
           <div className="bg-gray-900 bg-opacity-70 absolute h-64 w-64 flex justify-center align-center items-center">
-            <p className={`text-9xl pb-3 font-bold font-face-texturina ${Styles.accentText}`}>?</p>
+            <p className={`text-9xl pb-3 font-bold font-face-texturina accent-text ${Styles.questionHover}`}>?</p>
           </div>
-          <img alt={'Wizard.jpg'} src={Wizard1} className="h-64 w-64"/>
+          <img alt={'Wizard.jpg'} src={Wizard1} className={`h-64 w-64`}/>
         </div>
-        <div className={`w-auto tablet:w-5/12 font-face-texturina ${Styles.accentText}`}>
+        <div className={`w-auto tablet:w-5/12 font-face-texturina accent-text`}>
           <h3 className="text-4xl font-bold mb-4">The Wizard's Tower</h3>
           <p className="text-xl mb-2 yellow-text">Our Vision is to be the biggest community asset vault project on Velas.</p>
           <p className="text-l mb-2">
@@ -69,16 +68,16 @@ function Description(props) {
 function Images(props) {
   return (
       <div className="grid tablet:grid-cols-2 tablet:grid-rows-4 laptop:grid-cols-5 laptop:grid-rows-2 gap-10 place-items-center pt-16 laptop:pt-16 mr-12 ml-12">
-        <img alt="Wizard" src={Wizard9} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard2} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard3} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard4} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard5} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard6} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard7} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard8} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard1} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
-        <img alt="Wizard" src={Wizard2} className={`hidden tablet:block h-64 w-64 rounded-xl ${Styles.borderAccent} ${Styles.cardsHover}`}/>
+        <img alt="Wizard" src={Wizard9} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover border-accent`}/>
+        <img alt="Wizard" src={Wizard2} className={`h-64 w-64 rounded-xl wizard-shadow cards-hover border-accent`}/>
+        <img alt="Wizard" src={Wizard3} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
+        <img alt="Wizard" src={Wizard4} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
+        <img alt="Wizard" src={Wizard5} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
+        <img alt="Wizard" src={Wizard6} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
+        <img alt="Wizard" src={Wizard7} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
+        <img alt="Wizard" src={Wizard8} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
+        <img alt="Wizard" src={Wizard1} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
+        <img alt="Wizard" src={Wizard2} className={`hidden tablet:block h-64 w-64 rounded-xl border-accent`}/>
       </div>
   )
 }

@@ -1,3 +1,8 @@
+.header {
+    background-color: #1F1F1F;
+    box-shadow: 0px 0px 13px 5px #1F1F1F;
+    z-index: 100;
+}
 .menuPoint {
     transition-duration: .2s;
 

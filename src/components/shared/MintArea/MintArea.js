@@ -7,7 +7,7 @@ function MintArea(props) {
           <h1 className="text-4xl font-bold">Buy a Wizard</h1>
         </div>
         <div className="">
-          <h3 className="text-2xl font-bold">Price per Wizard: 850 VLX</h3>
+          <h3 className="text-2xl font-bold">Price per Wizard: (TBD) VLX</h3>
           <h3 className="text-xl font-bold">Max mint per wallet: 20 Wizards</h3>
           <p className="mt-2 text-sm">Note that 100 Wizards are being withheld from the sale.</p>
           <p className="text-sm">They will be used for giveaways, partnerships and future events.</p>

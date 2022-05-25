@@ -1,0 +1,16 @@
+.button {
+    cursor: pointer;
+    max-width: 150px;
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: rgba(94, 246, 228, 0.4);
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #ececec;
+    transition-duration: .1s;
+}
+.button:hover {
+    background-color: #5EF6E4;
+    color: #1F1F1F;
+}

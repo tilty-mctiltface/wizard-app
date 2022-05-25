@@ -21,7 +21,7 @@ function Landing(props) {
           <h1 className="font-face-TreesRegular light-text text-6xl tablet:text-9xl text-center pt-20 pb-40">The Enchanted Forest</h1>
         </div>
         <div className="flex flex-row flex-wrap justify-around">
-          <Link to="/home">
+          <Link to="/wizards/home">
             <RealmButton src={WizardHat} alt={'WizardHat'} name={'The Wizards Tower'}/>
           </Link>
           <Link to="/v2">

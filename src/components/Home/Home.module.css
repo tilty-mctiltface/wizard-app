@@ -1,9 +1,8 @@
-.borderAccent {
-    border: 1px solid #bbf8f1;
+.questionHover {
+    transition: all .15s ease-out;
 }
-
-.accentText {
-    color: #bbf8f1;
+.questionHover:hover {
+    transform: scale(1.4);
 }
 .cardsHover {
     transform: rotate3d(6, 6, 0, 40deg);

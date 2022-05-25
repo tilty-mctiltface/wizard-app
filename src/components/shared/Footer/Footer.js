@@ -1,9 +1,9 @@
-import './Footer.css'
+import Styles from './Footer.module.css'
 import {Link} from "react-router-dom";
 
 function Footer(props) {
   return (
-      <div className="w-full flex flex-row flex-wrap justify-between align-center items-center p-20 light-text footer-border">
+      <div className={`w - full flex flex-row flex-wrap justify-between align-center items-center p-20 light-text ${Styles.footer}`}>
         <div className="flex flex-row flex-wrap mb-8">
           <div className="w-40 h-40 mr-8">
             <svg width="" height="160" viewBox="0 0 750 1000" fill="none" xmlns="http://www.w3.org/2000/svg">

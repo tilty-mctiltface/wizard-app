@@ -1,0 +1,49 @@
+.card {
+    background-color: #1F1F1F;
+    max-width: 300px;
+    filter: drop-shadow(3px 2px 3px rgba(94, 246, 228, 0.25));
+}
+.details {
+    display: none;
+    position: absolute;
+    background-color: rgba(31, 31, 31, 0.95);
+}
+.show {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: show 0.1s ease-in;
+}
+.hide {
+    width: 0;
+    height: 0;
+    animation: hide 0.1s ease-in;
+}
+.imageContainer {
+max-width: 350px;
+}
+.infoContainer {
+
+}
+.actionsContainer {
+
+}
+@keyframes show {
+    0% {
+        height: 0;
+        display: flex;
+    }
+    100% {
+        height: 100%;
+        display: flex;
+    }
+}
+@keyframes hide {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0;
+    }
+}

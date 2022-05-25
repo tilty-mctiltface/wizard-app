@@ -1,0 +1,11 @@
+.container {
+    background-color: #0e1b23;
+}
+.vaultsBox {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    column-gap: 24px;
+    row-gap: 24px;
+}
